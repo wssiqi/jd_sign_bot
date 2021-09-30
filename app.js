@@ -55,7 +55,7 @@ async function sendNotify () {
 // 主程序
 async function main() {
   if (!KEY) {
-    console.log(KEY)
+    console.log(process.env.JD_COOKIE)
     console.log('请填写 key 后在继续')
     return
   }
