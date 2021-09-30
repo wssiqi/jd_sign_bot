@@ -8,8 +8,10 @@ import download from 'download';
 import send from './utils/sendNotify.js';
 
 // 公共变量
-const { KEY, serverJ, DualKey, PUSH_METHOD, PUSH_KEY, PUSH_SECRET, PUSH_ADDRESS } = process.env;
-
+// const { KEY, serverJ, DualKey, PUSH_METHOD, PUSH_KEY, PUSH_SECRET, PUSH_ADDRESS } = process.env;
+const { serverJ, DualKey, PUSH_METHOD, PUSH_SECRET, PUSH_ADDRESS } = process.env;
+const KEY = process.env.JD_COOKIE
+const PUSH_KEY = process.env.PUSH_KEY
 
 // 下载文件
 async function downFile () {
