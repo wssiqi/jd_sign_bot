@@ -11,6 +11,7 @@ import send from './utils/sendNotify.js';
 const KEY = process.env.JD_COOKIE
 const PUSH_KEY = process.env.PUSH_KEY
 const PUSH_METHOD = 'ServerChanTurbo'
+const DualKey = ''
 
 // 下载文件
 async function downFile () {
@@ -47,7 +48,7 @@ async function sendNotify () {
     text: content,
     method: PUSH_METHOD,
     key: PUSH_KEY || serverJ,
-    secret: PUSH_SECRET,
+    secret: "",
     address: PUSH_ADDRESS
   });
   await sendNotify("" + ` ${res2} ` + ` ${res} ` + new Date().toLocaleDateString(), content);
