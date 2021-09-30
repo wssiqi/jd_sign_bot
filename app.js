@@ -12,6 +12,7 @@ const KEY = process.env.JD_COOKIE
 const PUSH_KEY = process.env.PUSH_KEY
 const PUSH_METHOD = 'ServerChanTurbo'
 const DualKey = ''
+const PUSH_ADDRESS = ''
 
 // 下载文件
 async function downFile () {
