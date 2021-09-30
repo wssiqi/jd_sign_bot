@@ -8,10 +8,9 @@ import download from 'download';
 import send from './utils/sendNotify.js';
 
 // 公共变量
-// const { KEY, serverJ, DualKey, PUSH_METHOD, PUSH_KEY, PUSH_SECRET, PUSH_ADDRESS } = process.env;
-const { serverJ, DualKey, PUSH_METHOD, PUSH_SECRET, PUSH_ADDRESS } = process.env;
 const KEY = process.env.JD_COOKIE
 const PUSH_KEY = process.env.PUSH_KEY
+const PUSH_METHOD = 'ServerChanTurbo'
 
 // 下载文件
 async function downFile () {
@@ -57,7 +56,6 @@ async function sendNotify () {
 // 主程序
 async function main() {
   if (!KEY) {
-    console.log(process.env.JD_COOKIE)
     console.log('请填写 key 后在继续')
     return
   }
