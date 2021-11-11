@@ -4,8 +4,7 @@ on:
     push:
         branches:
             - disable
-    schedule:
-        - cron: '5 16 * * *'
+
 jobs:
     build:
         runs-on: ubuntu-latest
